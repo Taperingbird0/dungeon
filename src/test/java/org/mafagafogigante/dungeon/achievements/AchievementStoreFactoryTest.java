@@ -10,7 +10,7 @@ public class AchievementStoreFactoryTest {
   @Test(expected = IllegalStateException.class)
   public void testMakeAchievementStoreShouldReturnLockedStore() throws Exception {
     AchievementBuilder achievementBuilder = new AchievementBuilder();
-    achievementBuilder.setId("ACHIEVEMENT");
+    achievementBuilder.setId("RYAN KIM");
     List<Achievement> emptyList = Collections.emptyList();
     AchievementStore achievementStore = AchievementStoreFactory.makeAchievementStore(emptyList);
     achievementStore.addAchievement(achievementBuilder.createAchievement());
